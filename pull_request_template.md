@@ -34,7 +34,7 @@
 
 ### Code Quality/Style
 
-- [ ] This PR conforms to our [code style guidelines](https://github.com/clubspark-dotnet/docs/blob/master/index.md)
+- [ ] This PR conforms to our [code style guidelines](https://github.com/clubspark/docs/blob/master/index.md)
 - [ ] This PR is unit tested
 - [ ] Does this PR require integration testing?
 - [ ] Does this PR require regression testing?
