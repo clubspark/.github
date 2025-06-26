@@ -1,48 +1,61 @@
-<!-- This section is for the developer to complete. -->
+<!-- ============================== -->
+<!-- Section: Developer Checklist  -->
+<!-- ============================== -->
 
 ## What does this PR do?
 
-
 ## What are the relevant tickets?
-
 
 ## Where should the reviewer start?
 
-
 ## How can this be manually tested?
 
-
-## Any additional info?
-
+## Any additional context?
 
 ## Screenshots (if appropriate)
 
+## Definition of Done
 
-## Definition of Done:
+- [ ] Meets acceptance criteria from Jira ticket
+- [ ] Includes relevant automated tests
+- [ ] Reviewed for performance impact (e.g. loops, queries, large payloads)
+- [ ] Reviewed for security risks (e.g. XSS, injection, unsafe eval/exec, secrets in code)
+- [ ] Input validation and sanitization in place
+- [ ] Appropriate error handling included
+- [ ] Feature flag used if appropriate
+- [ ] Backwards compatibility maintained
+- [ ] All TODOs are resolved or linked to a task
 
-<!-- This section is for the reviewer to complete. -->
+---
 
-### Task
+<!-- ============================== -->
+<!-- Section: Reviewer Checklist   -->
+<!-- ============================== -->
 
-- [ ] This PR includes a Jira Reference
-- [ ] This PR satisfies the acceptance criteria
+### Jira & Documentation
 
-### Documentation
+- [ ] Jira reference included and matches implementation
+- [ ] New endpoints documented in Swagger/OpenAPI or GraphQL
+- [ ] Feature documented in Confluence (if required)
 
-- [ ] New features are documented in Confluence
-- [ ] New endpoints are documented in Swagger
+### Code Quality
 
-### Code Quality/Style
+- [ ] PR follows [code style guidelines](https://clubspark.atlassian.net/wiki/spaces/DEV/pages/1228768243/Coding+guidelines+-+Javascript)
+- [ ] Code is readable and maintainable
+- [ ] Code includes unit tests with good coverage
+- [ ] Integration/regression tests updated if needed
 
-- [ ] This PR conforms to our [code style guidelines](https://github.com/clubspark/docs/blob/master/README.md)
-- [ ] This PR is unit tested
-- [ ] Does this PR require integration testing?
-- [ ] Does this PR require regression testing?
+### Security
 
-### Deployment / Automation
+- [ ] No secrets or credentials in code/config
+- [ ] Sensitive data is masked or encrypted as needed
+- [ ] Secure headers, CORS, auth/permissions considered
+- [ ] Third-party libraries vetted for security risks
 
-- [ ] Does this PR require any SQL scripts?
-- [ ] Does this PR require any new infrastructure?
-- [ ] Does this PR add new dependencies? (e.g. Mailjet, Salesforce, etc)
-- [ ] Does this PR include appropriate logging?
-- [ ] Does this PR include new monitoring endpoints?
+### Deployment
+
+- [ ] Requires SQL scripts? If yes, reviewed and safe to run
+- [ ] Requires infrastructure changes? If yes, approved/communicated
+- [ ] New dependencies declared and justified (e.g. Mailjet, Salesforce)
+- [ ] Logging added at appropriate levels (info/warn/error)
+- [ ] Monitoring/alerting added if applicable
