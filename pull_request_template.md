@@ -35,7 +35,7 @@
 ### Jira & Documentation
 
 - [ ] Jira reference included and matches implementation
-- [ ] New endpoints documented in Swagger/OpenAPI
+- [ ] New endpoints documented in Swagger/OpenAPI or GraphQL
 - [ ] Feature documented in Confluence (if required)
 
 ### Code Quality
